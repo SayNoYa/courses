@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Отслеживание состояния</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Ежедневный чекин</h1>
+    <p class="subtitle">Отметь выполненные пункты</p>
+
+    <form id="checkin-form">
+      <div id="questions-list"></div>
+
+      <button type="submit" class="submit-btn" id="submit-btn">
+        Отправить
+      </button>
+    </form>
+
+    <div id="success-msg" class="success hidden">
+      ✅ Ответы сохранены. Спасибо!
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
